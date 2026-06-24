@@ -27,4 +27,10 @@ print(filter_even_result)
 filter_mask =  (my_arr % 2 != 0) & (my_arr > 20)      #& use garne "and" use gare ma error
 filter_odd_result = my_arr[filter_mask]
 print(filter_odd_result)
+""" Output:[43 21 41] """
+
+
+filter_mask =  (my_arr % 2 == 0) | (my_arr > 40)
+filtered_result = my_arr[filter_mask]
+print(filtered_result)
 
