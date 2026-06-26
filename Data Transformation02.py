@@ -148,7 +148,7 @@ print(chck)
  [ 0. -0.  0.  1.]]"""
 print()
 
-
+#matrix function on equations
 # 3x + 2y = 7
 # x - y= 5
 
@@ -177,7 +177,8 @@ print(x_values)
  [-1.6]]"""
 print()
 
-
-
-""" Output: """
-print()
+#using .solve(); alternate way of just above
+result = np.linalg.solve(mat_a, mat_b)          #yesma direct solve hunxa i.e. 1st ma inverse nikalera mat_b dot product liyeko ani teslai print gareko
+print(np.round(result,2))
+""" Output: [[ 3.4]
+ [-1.6]]"""
