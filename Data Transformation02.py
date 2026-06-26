@@ -138,4 +138,46 @@ print(inv_mat_4x4)
  [ 0.28947368 -0.31578947 -0.02631579  0.26315789]]"""
 print()
 
+#making identity matrix
+chck = np.round(mat_4x4 @ inv_mat_4x4, 2)   # ,2 --> decimal paxi two floats rakh vaneko
+print(chck)
+""" Output: 
+[[ 1. -0.  0.  0.]
+ [ 0.  1.  0. -0.]
+ [ 0. -0.  1. -0.]
+ [ 0. -0.  0.  1.]]"""
+print()
 
+
+# 3x + 2y = 7
+# x - y= 5
+
+#Ax=b
+#x=A-1b
+#[3  2][x]=[7]
+#[1 -1][5]=[5]
+
+mat_a = np.array([[3,2],[1,-1]])
+mat_b = np.array([[7],[5]])
+
+print(mat_a)
+print(mat_b)
+""" Output: 
+[[ 3  2]
+ [ 1 -1]]
+[[7]
+ [5]]"""
+print()
+
+inv_a = np.linalg.inv(mat_a)
+x_values = np.round(inv_a @ mat_b,2)          #yesma inverse nikalera dot product liyeko ani teslai print gareko
+print(x_values)
+""" Output: 
+[[ 3.4]
+ [-1.6]]"""
+print()
+
+
+
+""" Output: """
+print()
