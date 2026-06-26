@@ -98,8 +98,44 @@ print()
 
 arr_1=np.array([2,3,8])
 arr_2=arr_1.copy()              #arr_2=arr_1 matra vayeko vaye arr_1 ra 2 print garda same result hunthyo i.e. eutai manxeko duita nam jasto
-arr_1[2]=4
+arr_1[2]=4                      #yesko change le pani arr_1 ra 2 both change hunthyo tara .copy() le matra arr_2 ma chnage garxa arr_1 copy garera 
 print(arr_1)
 print(arr_2)
-""" Output: """
+""" Output: 
+[2 3 4]
+[2 3 8]"""
 print()
+
+
+#determinant
+mat_2x2 = np.array([[1,4],[3,4]])
+print(mat_2x2)
+
+det_a= np.round(np.linalg.det(mat_2x2),2)       #linalg-->linear algebra, det--> determinant
+print(det_a)
+""" Output: 
+[[1 4]
+ [3 4]]
+-8.0"""
+print()
+
+
+mat_4x4 = np.array([[1,4,7,6],[3,4,9,8],[5,6,9,2],[3,1,4,7]])
+print(mat_4x4)
+""" Output: [[1 4 7 6]
+ [3 4 9 8]
+ [5 6 9 2]
+ [3 1 4 7]]"""
+print()
+
+
+inv_mat_4x4 = np.linalg.inv(mat_4x4)
+print(inv_mat_4x4)
+""" Output: 
+[[-0.13157895 -0.19736842  0.17105263  0.28947368]
+ [ 1.         -1.25        0.25        0.5       ]
+ [-0.65789474  1.01315789 -0.14473684 -0.55263158]
+ [ 0.28947368 -0.31578947 -0.02631579  0.26315789]]"""
+print()
+
+
