@@ -29,8 +29,32 @@ filter_odd_result = my_arr[filter_mask]
 print(filter_odd_result)
 """ Output:[43 21 41] """
 
-
+#using  "or" 
 filter_mask =  (my_arr % 2 == 0) | (my_arr > 40)
 filtered_result = my_arr[filter_mask]
 print(filtered_result)
+""" Output:[40 43 14 41 44] """
+
+
+filter_mask =  (my_arr % 2 == 0) | (my_arr > 40)
+filtered_condition = my_arr[~filter_mask]         #~tilday/ negation i.e. not ;  condition satis fy nagarna ko lagi
+print(filtered_condition)
+""" Output:[19 21 13] """
+
+
+
+
+np.random.seed(20)
+
+arr_2 = np.random.randint(-5, 20,(10,))            # -5 bata 20 samma 10 wata generate garne vaneko
+print(arr_2)
+
+
+#replace -ve value with 0
+
+filter_mask =arr_2 <0
+arr_2[filter_mask] = 0      #my_list[condition] = value
+print(arr_2)
+
+
 
