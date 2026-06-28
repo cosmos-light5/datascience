@@ -182,3 +182,19 @@ result = np.linalg.solve(mat_a, mat_b)          #yesma direct solve hunxa i.e. 1
 print(np.round(result,2))
 """ Output: [[ 3.4]
  [-1.6]]"""
+
+
+""" The np.linalg.solve() function in NumPy is used to compute the exact solution of a linear matrix equation or a system of linear scalar equations. 
+It solves for the unknown vector x in the standard matrix equation Ax = b.
+    
+    2x+3y=8
+    4x-1y=2
+
+A = np.array([[2, 3],               # 1. Define the coefficient matrix A
+              [4, -1]])
+b = np.array([8, 2])                # 2. Define the constant vector b
+
+solution = np.linalg.solve(A, b)    # 3. Solve for x and y
+
+print("Solution [x, y]:", solution)
+# Output: Solution [x, y]: [1. 2.] """
